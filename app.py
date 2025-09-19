@@ -56,7 +56,7 @@ def export():
         writer.writerow(["description", "merchant", "amount", "date", "method", "notes", "tags"])
         writer.writerows(data)
 
-    return f"✅ Exported to: {EXPORT_PATH}"
+    return f" Exported to: {EXPORT_PATH}"
 
 if __name__ == "__main__":
     os.makedirs("exports", exist_ok=True)
